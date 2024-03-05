@@ -1,0 +1,112 @@
+
+<html>
+<head>
+<title>Hacker Typer 2.0</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+<link href='https://www.pramuwaskito.org/wp-content/uploads/2018/08/cropped-pramu-icon-32x32.png' rel='icon' type='image/x-icon'/>
+<meta name="description" content="Hacker typer unblocked was inspired by the various media where hacking is usually portrayed incorrectly. We make it look like you're coding like a real hacker.">
+<meta name="keywords" content="hacker typer, hacker typer 2.0, hacker prank">
+<link rel="stylesheet" href="styledefault.css">
+<script language=javascript>
+var tl = new Array(
+"   ",
+" Boot:",
+" Loading...................................................................................[ ok ]",
+" Data check successful.....................................................................[ ok ]",
+
+" * Starting results........................................................................[ ok ]",
+" * Starting basic networking ..............................................................[ ok ]",
+" * Starting Hardware Driver ...............................................................[ ok ]",
+" * Starting Kernel ........................................................................[ ok ]",
+" * Starting find / -type d -perm 777 ......................................................[ ok ]",
+"	",
+"	",
+" * Mounting local file systems.............................................................[ ok ]",
+" * acctivating swapfile swap...............................................................[ ok ]",
+" * Skipping firewall: ufw (not enable).....................................................[ ok ]",
+" * Loading ACPI Modules....................................................................[ ok ]",
+"	",
+"	",
+" login:root",
+" password:*******",
+" root@server:www.pramuwaskito.org",
+" root",
+"	",
+"	",
+" root@server: cd /root/home/public_html",
+"	",
+" root@server:-/root/home/public_html>",
+"	",
+" root@server:-/root/home/public_html> wget https://www.pramuwaskito.org/index.html",
+" Downloading index.html",
+"	",
+" root@server:-/root/home/public_html> ls *.html",
+" -rw-r--r-- 1 root root 2893 index.html",
+"	",
+" root@server:-/root/home/public_html> mv  index.php",
+" root@server:-/root/home/public_html> mv  index.html",
+"	",
+" root@server:-/root/home/public_html> ls",
+"	",
+" root@server:-/root/home/public_html> PRAMUWASKITO.ORG HACKER TYPER");
+
+var speed = 0;
+var index = 0; text_pos = 0;
+var str_length = tl[0].length;
+var contents, row;
+
+function type_text()
+{
+    contents = '';
+    row = Math.max(0, index-25);
+    while (row<index) contents += tl[row++] + '\r\n';
+    document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
+    if (text_pos ++== str_length)
+    {
+        text_pos = 0;
+        index++;
+        if (index != tl.length)
+        {
+            str_length = tl[index].length;
+            setTimeout("type_text()", 50);
+        }  
+    } else
+    setTimeout("type_text()", speed);
+}
+</script>
+
+
+<script>
+function showBuyNow() { 
+    document.getElementById("BuyNow").style.display = "inline"; 
+}
+
+//this calls the function above, 3000 milliseconds is 3 seconds, adjust here to make it a longer interval
+setTimeout("showBuyNow()", 13000);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MF21N5TRD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0MF21N5TRD');</script>
+</head>
+
+<body onLoad=type_text()>
+
+<div class="judul">Hacker Typer</div>
+
+
+<form style="padding:50px 0;">
+<font face="trebuchet ms, verdana, arial, helvetica, sans-serif" size="2">
+<div align="center">
+<textarea rows=20 cols=91 wrap=soft style="width:854;height:470;background:rgba(0, 0, 0, .5);color:#fff;border:0;border-radius:4px;box-shadow: 0 1px 11px rgba(0, 0, 0, 0.7);outline:none!important;margin-top:-40px;"></textarea>
+</div>
+</font>
+</form>
+
+<div id="BuyNow" style="display:none">
+<center><a href="https://www.pramuwaskito.org/game/typer/">LOGIN<span></span><span></span><span></span><span></span></a></center>
+</div>
+
+</body>
+</html>
